@@ -19,6 +19,7 @@ int main()
     if(month < 1 || month > 12)
     {
         printf("Invalid month! \n");
+        sleep(1);
         return 0;
     }
     if(month == 2)
@@ -28,6 +29,7 @@ int main()
             if(day < 1 || day > 29)
             {
                 printf("Invalid day! \n");
+                sleep(1);
                 return 0;
             }
         }
@@ -36,6 +38,7 @@ int main()
             if(day < 1 || day > 28)
             {
                 printf("Invalid day! \n");
+                sleep(1);
                 return 0;
             }
         }
@@ -45,6 +48,7 @@ int main()
         if(day < 1 || day > 30)
         {
             printf("Invalid day! \n");
+            sleep(1);
             return 0;
         }
     }
@@ -53,12 +57,14 @@ int main()
         if(day < 1 || day > 31)
         {
             printf("Invalid day! \n");
+            sleep(1);
             return 0;
         }
     }
     if(year<1990)
     {
         printf("Invalid year! \n");
+        sleep(1);
         return 0;
     }
     //计算从1990年1月1日到输入日期的天数
