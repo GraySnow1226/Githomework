@@ -70,7 +70,10 @@ int main()
             sum+=365;
     }
     if(month>1)
-        sum+=monthDays[month-2];
+    {
+        for(int i=0;i<month-1;i++)
+            sum+=monthDays[i];
+    }
     if(month>2 && isRun(year))
         sum++;
     sum+=day-1;
